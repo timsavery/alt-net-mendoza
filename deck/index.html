@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    
+    <title>Building RESTful Services with Node.js</title>
+    
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+
+    <link href="css/impress-demo.css" rel="stylesheet" />
+
+</head>
+
+<body class="impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div class="step slide" data-x="-1000" data-y="-1500">
+        <center><q>Building <b>REST</b>ful Services with <strong>Node.js</strong></q></center>
+        <center><img style="margin-top:40px" src="img/nodejs.jpg" /></center>
+    </div>
+
+    <div class="step slide" data-x="0" data-y="-1500">
+        <center><q>What is Node.js?</q></center>
+        <ul style="list-style-type: disc; margin-left: 40px; margin-top: 40px">
+            <li style="margin-bottom: 10px"><strong>Open Source</strong></li>
+            <li style="margin-bottom: 10px"><strong>Server-side JavaScript</strong> runtime</li>
+            <li style="margin-bottom: 10px">Built on <strong>Google V8</strong> <i>(chrome's JavaScript engine)</i></li>
+            <li style="margin-bottom: 10px">Single-threaded <strong>event loop</strong> <i>(just like a browser)</i></li>
+            <li style="margin-bottom: 10px">All I/O is <strong>asynchronous</strong> <i>(non-blocking)</i></li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <center><q>You already do asynchronous JavaScript!</q></center>
+        <pre style="margin-top: 40px">$.get('/somewhere', function(data)) { 
+    alert(data);
+});</pre>
+        <p style="margin-top: 20px; margin-bottom: 20px">...</p>
+        <pre>setTimeout('doSomething()', 2000);</pre>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <center><q>Strong Community</q></center>
+        <ul style="list-style-type: disc; margin-left: 40px; margin-top:40px">
+            <li style="margin-bottom: 10px">Central registry for community contributed modules <i>(called NPM, <a href="http://npmjs.org">npmjs.org</a>)</i></li>
+            <li style="margin-bottom: 10px">7,000+ modules already contributed</li>
+            <li style="margin-bottom: 10px">Weekly podcast to communicate latest developments <i>(called NodeUp, <a href="http://nodeup.com">nodeup.com</a>)</i></li>
+            <li style="margin-bottom: 10px">Annual conferences and regional meetup groups <i>(ex. Node.Philly, <a href="http://node.ph">node.ph</a>)</i></li>            
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="3000" data-y="-1500">
+        <center><q>What are <strong>REST</strong>ful Services?</q></center>
+        <ul style="list-style-type: disc; margin-left: 40px; margin-top:40px">
+            <li style="margin-bottom: 10px">
+                User HTTP methods explicitly
+                <ul style="list-style-type: disc; margin-left: 40px; margin-top: 10px">
+                    <li style="margin-bottom: 10px">POST: <i>create a resource</i></li>
+                    <li style="margin-bottom: 10px">GET: <i>retrieve a resource</i></li>
+                    <li style="margin-bottom: 10px">PUT/PATCH: <i>update a resource</i></li>
+                    <li style="margin-bottom: 10px">DELETE: <i>delete a resource</i></li>
+                </ul>
+            </li>            
+            <li style="margin-bottom: 10px">Be stateless</li>
+            <li style="margin-bottom: 10px">Use XML or JSON protocol <i>(preferrably JSON)</i></li>
+            <li style="margin-bottom: 10px">Use descriptive URIs</li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="4000" data-y="-1500">
+        <center><q>DEMO :: Hello World!</q></center>        
+        <center><img style="margin-top:40px" src="img/helloworld.jpg" /></center>
+    </div>
+
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <center><q>DEMO :: Using RESTify Module</q></center>        
+        <center><img style="margin-top:40px" src="img/restify.jpg" /></center>
+    </div>
+
+</div>
+
+<div class="hint">
+    <p>Use a spacebar or arrow keys to navigate</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+}
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+</body>
+</html>
