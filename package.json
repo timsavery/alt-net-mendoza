@@ -1,0 +1,9 @@
+{
+    "dependencies": {
+        "restify": "1.4.3"
+    },
+    "description": "An example of building a REST service to manager users.",
+    "name": "user-service-rest",
+    "private": "true",
+    "version": "0.0.1"
+}
