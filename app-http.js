@@ -1,7 +1,7 @@
 var http = require('http');
 
 var server = http.createServer(function(req, res) {
-	// TODO: say hello to the world
+	res.end('Hello World!');
 });
 
 var port = 8080;
